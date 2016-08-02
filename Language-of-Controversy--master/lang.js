@@ -97,7 +97,7 @@ function getBookFile() {
       bookFile = "bookstxt/WhiteNiggersOfAmerica.txt";
       break;
     default:
-      bookFile = "bookstxt/WhiteNiggersOfAmerica.txt";
+      bookFile = "bookstxt/AnimalFarm.txt";
       break;
   }
 }
