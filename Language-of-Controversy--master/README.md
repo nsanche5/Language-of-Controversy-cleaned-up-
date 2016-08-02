@@ -6,3 +6,4 @@
  
  Contributors: Andy Lin, Eugenia Tan, Norberto Sanchez, and Stella Lee
  
+Previous version: https://github.com/stlalee/Language-of-Controversy-
