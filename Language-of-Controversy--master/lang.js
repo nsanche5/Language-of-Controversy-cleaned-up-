@@ -106,10 +106,9 @@ function drawCloud(bookFile) {
   //Reads the text file as a large string 
   $.get(bookFile, function(data)
   {
-    console.log(data);
     var bookText = cleanText(data);
 
-    //
+    //Result holds each unique word found in text file
     var result = unique(bookText);
     
     var wordsDict = {};
@@ -128,7 +127,7 @@ function drawCloud(bookFile) {
       }
     }
 
-    //Change 
+    //Change word dictionary to array for sorting purposes
     var top = Object.keys(wordsDict).map(function(key)
     {
       return [key, wordsDict[key]];
@@ -139,7 +138,6 @@ function drawCloud(bookFile) {
       return second[1] - first[1];
     });
 
-    //console.log(top);
     var topWords = [];
     for (var i = 0; i < 25; ++i)
     {
@@ -154,6 +152,5 @@ function drawCloud(bookFile) {
 //Jquery magic
 $(document).ready(function(){
   getBookFile();
-  console.log(bookFile);
   drawCloud(bookFile);
 });
