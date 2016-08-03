@@ -1,5 +1,3 @@
-//All to be replaced by a JS file.
-
 //Var used to store bookfile being read in
 var bookFile;
 
@@ -9,6 +7,7 @@ function unique(list)
   var result = [];
    
   $.each(list, function(i, e) {
+
     if (($.inArray(e, result) == -1) ) result.push(e);
   });
 
@@ -113,7 +112,7 @@ function drawCloud(bookFile) {
     
     var wordsDict = {};
     
-    //Push the unique words into the wordArray, will be used for keeping count
+    //Push the unique words into a word dictionary, will be used for keeping count
     for (var i = 0; i < result.length; ++i){
       wordsDict[result[i]] = 1;
     }
